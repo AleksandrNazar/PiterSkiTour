@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PiterSki</title>
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/my-icons-font.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="hortcut icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+    	<header class="header">
+            <div class="container">
+                <div class="header__block">
+                    <div class="logo">
+                        <a class="logo__link" href="index.html">
+                            <img src="./img/logo-short-white.svg" alt="logo-image">
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link active" href="#intro">О нас</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#team">Команда</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#tours">Туры</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#gallery">Галлерея</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="nav-mobile">
+                        <ul class="nav-mobile__list">
+                            <li class="nav-mobile__item">
+                                <a class="nav-mobile__link" href="#intro">О нас</a>
+                            </li>
+                            <li class="nav-mobile__item">
+                                <a class="nav-mobile__link" href="#team">Команда</a>
+                            </li>
+                            <li class="nav-mobile__item">
+                                <a class="nav-mobile__link" href="#tours">Туры</a>
+                            </li>
+                            <li class="nav-mobile__item">
+                                <a class="nav-mobile__link" href="#gallery">Галлерея</a>
+                            </li>
+                            <li class="nav-mobile__item">
+                                <a class="nav-mobile__link" href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="connect">
+                        <a href="https://t.me/piterskitour" class="connect__link icon-telegram" target="blank"></a>
+                        <a href="https://instagram.com/piter.ski.tour?igshid=YmMyMTA2M2Y=" class="connect__link icon-instagram" target="blank"></a>
+                        <a href="https://vk.com/piter.ski.tour" class="connect__link icon-vk" target="blank"></a>
+                        <button class="connect__btn btn modal-button">Звонок</button>
+                    </div>
+
+                    <div class="nav__toggle">
+                        <div class="nav__toggle-button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </header>
+
+        <!--Modal window-->
+        <div class="fade-block hidden">
+            <div class="modal-window">
+                <form class="form" action="/" method="post">
+                    <div class="form-title">
+                        <div class="form-title__text">Закажите обратный звонок</div>
+                        <button class="modal-close-button">Закрыть</button>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__input">Ваше имя</div>
+                        <input class="input" type="text" name="name" maxlength="100">
+                    </div>
+                    <div class="form__item">
+                        <div class="form__input">Ваш телефон</div>
+                        <input class="input" type="tel" name="tel" maxlength="100">
+                    </div>
+                    <div class="form__item">
+                        <input class="checkbox" type="checkbox" name="checkbox1" maxlength="100">
+                        <label class="checkbox__label" for="checbox1">Я выражаю <a href="#!" target="blank">согласие на передачу и обработку персональных данных</a> в соответствии с <a href="#!" target="blank">Политикой конфиденциальности</a>.</label>
+                    </div>
+                    <div class="form__btn">
+                        <button class="btn" type="submit">Отправить</button>
+                    </div>
+                </form> 
+            </div>
+        </div>
+        <!--//Modal window-->
+
+        <main class="main">
+
+            <section class="intro" id="intro">
+                <div class="container">
+                    <div class="intro__block">
+                        <h1 class="intro__title">Горнолыжные туры по всему миру</h1>
+                        <p class="intro__text">PiterSki - то команда друзей и единомышленников влюблённых горы. Если активный отдых тебе по душе, то присоединяйся к нам и бронируй своё незабываемое путешествие. Будем какать вместе!</p>
+                        <button class="btn">Забронировать</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tours section" id="tours">
+                <div class="container">
+                    <h2 class="section__title">Туры 2022 - 2023</h2>
+                    <div class="tours__block cards">
+                    <div class="card">
+                        <a href="#!" class="card__img">
+                            <img src="./img/about-image.jpg" alt="tours-photo">
+                        </a>
+                        <div class="card__info">
+                            <h3 class="card__title">Красная поляна</h3>
+                            <div class="card__date">11.02 - 18.02.2023</div>
+                            <div class="card__price">35000₽</div>
+                            <div class="card__btn">
+                                <a class="btn mobile--btn" href="#!">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#!" class="card__img">
+                            <img src="./img/about-image.jpg" alt="tours-photo">
+                        </a>
+                        <div class="card__info">
+                            <h3 class="card__title">Красная поляна</h3>
+                            <div class="card__date">11.02 - 18.02.2023</div>
+                            <div class="card__price">35000₽</div>
+                            <div class="card__btn">
+                                <a class="btn mobile--btn" href="#!">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#!" class="card__img">
+                            <img src="./img/about-image.jpg" alt="tours-photo">
+                        </a>
+                        <div class="card__info">
+                            <h3 class="card__title">Красная поляна</h3>
+                            <div class="card__date">11.02 - 18.02.2023</div>
+                            <div class="card__price">35000₽</div>
+                            <div class="card__btn">
+                                <a class="btn mobile--btn" href="#!">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#!" class="card__img">
+                            <img src="./img/about-image.jpg" alt="tours-photo">
+                        </a>
+                        <div class="card__info">
+                            <h3 class="card__title">Красная поляна</h3>
+                            <div class="card__date">11.02 - 18.02.2023</div>
+                            <div class="card__price">35000₽</div>
+                            <div class="card__btn">
+                                <a class="btn mobile--btn" href="#!">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#!" class="card__img">
+                            <img src="./img/about-image.jpg" alt="tours-photo">
+                        </a>
+                        <div class="card__info">
+                            <h3 class="card__title">Красная поляна</h3>
+                            <div class="card__date">11.02 - 18.02.2023</div>
+                            <div class="card__price">35000₽</div>
+                            <div class="card__btn">
+                                <a class="btn mobile--btn" href="#!">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#!" class="card__img">
+                            <img src="./img/about-image.jpg" alt="tours-photo">
+                        </a>
+                        <div class="card__info">
+                            <h3 class="card__title">Красная поляна</h3>
+                            <div class="card__date">11.02 - 18.02.2023</div>
+                            <div class="card__price">35000₽</div>
+                            <div class="card__btn">
+                                <a class="btn mobile--btn" href="#!">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="words section">
+                <div class="container">
+                    <div class="words__block">
+                        <h2 class="words__title">Любовь к горам у нас в крови!!</h2>
+                        <p class="words__text">С нашим фирменным коктейлем из солнца, снега, кучи положительных эмоций, драйва, шикарных видов и отличной компании, вас ждет то же самое.</p>
+                        <p class="words__text">И мы приглашаем тебя стать частью нашей команды!</p>
+                        <p class="words__text">По коктейлю!?</p>
+                        <div class="brand__img">
+                            <img src="img/rls-white.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team section" id="team">
+                <div class="container">
+                    <h2 class="section__title">Наша команда</h2>
+                    <div class="team-slider gallery-slider swiper-container">
+                        <div class="team-slider__wrapper swiper-wrapper">
+                            <div class="team-slider__slide swiper-slide">
+                                <div class="team-slider__image">
+                                    <img src="./img/team/team1.jpg" alt="аватарка">
+                                </div>
+                                <div class="team-slider__text">
+                                    <div class="team-slider__name">
+                                        Александр
+                                    </div>
+                                    <div class="team-slider__info">
+                                        Горные лыжи. Скромный, внимательный, ответственный, добрый.
+                                    </div>
+                                    <a class="team-slider__social icon-instagram" href="#!"></a>
+                                    <a class="team-slider__social icon-vk" href="#!"></a>
+                                </div>
+                            </div>
+                            <div class="team-slider__slide swiper-slide">
+                                <div class="team-slider__image">
+                                    <img src="./img/team/team2.jpg" alt="аватарка">
+                                </div>
+                                <div class="team-slider__text">
+                                    <div class="team-slider__name">
+                                        Ольга
+                                    </div>
+                                    <div class="team-slider__info">
+                                        Сноуборд. Наша хозяюшка, веселая и добрая.
+                                    </div>
+                                    <a class="team-slider__social icon-instagram" href="#!"></a>
+                                    <a class="team-slider__social icon-vk" href="#!"></a>
+                                </div>
+                            </div>
+                            <div class="team-slider__slide swiper-slide">
+                                <div class="team-slider__image">
+                                    <img src="./img/team/team3.jpg" alt="аватарка">
+                                </div>
+                                <div class="team-slider__text">
+                                    <div class="team-slider__name">
+                                        Андрей
+                                    </div>
+                                    <div class="team-slider__info">
+                                        Горные лыжи/сноуборд. Суровый, бородатый. С ним все в безопасности.
+                                    </div>
+                                    <a class="team-slider__social icon-instagram" href="#!"></a>
+                                    <a class="team-slider__social icon-vk" href="#!"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info section">
+                <div class="container">
+                    <h2 class="section__title">Нам можно доверить организацию</h2>
+                    <div class="info__block">
+                        <div class="info__cards">
+                            <div class="info__card">
+                                <h3 class="info__card-title">Все продумано</h3>
+                                <p class="info__card-text">Каждый тур прорабатывается до мелочейю. Трансфер, комфортное размещение, раздельные кровати, питание, каталка, apres-ski. Просто не забудь чехол со снарягой.</p>
+                            </div>
+                            <div class="info__card">
+                                <h3 class="info__card-title">Забота</h3>
+                                <p class="info__card-text">Мы на связи в любую минуту. Всегда поможем билетами, страховкой, визой. Ответим на любые вопросы. Присмотрим за тобой на горе.</p>
+                            </div>
+                            <div class="info__card">
+                                <h3 class="info__card-title">Опыт</h3>
+                                <p class="info__card-text">Покажем лучшие виды, потайные тропы и новые маршруты, ведь с нами только самые опытные инструкторы! Подскажем по снаряжению, где купить стоящие сувениры и вкусно покушать</p>
+                            </div>
+                            <div class="info__card">
+                                <h3 class="info__card-title">Apres-Ski</h3>
+                                <p class="info__card-text">Мы продумываем не только каталку, но и досуг. Каждый вечер ждем тебя на наши зажигательные мероприятия. Еще немного эмоций!</p>
+                            </div>
+                            <div class="info__card">
+                                <h3 class="info__card-title">По статистике</h3>
+                                <p class="info__card-text">90% людей едут с нами снова, мы становимся друзьями. 100% влюбляются в горы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="friends section">
+                <div class="container">
+                    <div class="friends__block">
+                        <div class="friends__img">
+                            <img src="img/friends.jpg" alt="photo">
+                        </div>
+                        <div class="friends__text">
+                            <p>Ты проведешь время в крутой компании единомышленников, увлеченных горами и путешествиями!</p>
+                            <p>Заведешь знакомства и обретешь новых друзей.</p>
+                            <p>Присоединяйся к нашему сообществу в telegram. Все наши уже там, ждем тебя!</p>
+                            <div class="friends__button">
+                                <a class="btn" href="https://t.me/piterskitour" target="blank">Дружба</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="gallery section" id="gallery">
+                <div class="container">
+                    <h2 class="section__title">Горы ждут тебя!</h2> 
+                </div>
+                    <!--Slider-->
+                    <div class="gallery-slider swiper-container">
+                        <div class="gallery-slider__wrapper swiper-wrapper">
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo1.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo2.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo3.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo4.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo5.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo6.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!--//Slider-->                      
+            </section>
+
+            <section class="qestions section">
+                <div class="container">
+                    <h2 class="section__title">Частые вопросы</h2>
+                    <div class="accordion">
+                        <div class="accordion__item active">
+                            <div class="accordion__title">
+                                Новичков берете?
+                            </div>
+                            <div class="accordion__text">
+                                Да, берем. Поможем подобрать хорошего инструктора, покажем где не страшно.
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__title">
+                                Дополнительные траты?
+                            </div>
+                            <div class="accordion__text">
+                                Перелёт (если летим), скипасс 2500₽ - 4000₽ день, обед на горе, инструктор, бары и ресораны(по желанию).
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__title">
+                                С кем меня поселят?
+                            </div>
+                            <div class="accordion__text">
+                                Кто едет один расселяем м+м, ж+ж, номера 2-х местные, кровати раздельные.
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__title">
+                                Какой средний возраст в группах?
+                            </div>
+                            <div class="accordion__text">
+                                С нами ездят люди разных возростов, от 27 - 55 лет. В душе все райдеры, на одной волне!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand__img">
+                        <img src="img/slr-white.png" alt="image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts section" id="contacts">
+                <div class="container">
+                    <h2 class="section__title">Контакты</h2>
+                    <div class="contacts__block">
+                        <div class="contacts__items">
+                            <div class="contacts__title">Наши контакты</div>
+                            <div class="contacts__text">Вы можете связаться с нами любым удобным способом</div>
+                            <div class="contacts__phone icon-phone"> +7(000)000-00-00</div>
+                            <div class="contacts__email icon-envelope2"> pst@mail.ru</div>
+                            <a class="contacts__social-link icon-telegram" href="#!" target="blank"> @piter.ski.tour</a>                       
+                        </div>
+                        <div class="contacts__form">
+                            <div class="contacts__title">Возникли вопросы?</div>
+                            <div class="contacts__text">Оставьте заявку — мы свяжемся с вами для уточнения деталей</div>
+                            <form class="form" action="/" method="post">
+                                <div class="form__item">
+                                    <div class="form__input">Ваше имя</div>
+                                    <input class="input" type="text" name="name" maxlength="100">
+                                </div>
+                                <div class="form__item">
+                                    <div class="form__input">Ваш телефон</div>
+                                    <input class="input" type="tel" name="tel" maxlength="100">
+                                </div>
+                                <div class="form__item">
+                                    <input class="checkbox" type="checkbox" name="checkbox1" maxlength="100">
+                                    <label class="checkbox__label" for="checbox1">Я выражаю <a href="#!" target="blank">согласие на передачу и обработку персональных данных</a> в соответствии с <a href="#!" target="blank">Политикой конфиденциальности</a>.</label>
+                                </div>
+                                <div class="form__btn">
+                                    <button class="btn" type="submit">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__block">
+                    
+                    <div class="footer__social">
+                        <a href="#!" class="footer__social-link icon-telegram" target="blank"></a>
+                        <a href="#!" class="footer__social-link icon-instagram" target="blank"></a>
+                        <a href="#!" class="footer__social-link icon-vk" target="blank"></a>
+                    </div>
+
+                    <div class="footer__logo">
+                        <img src="./img/logo-short-white.svg" alt="logo">
+                    </div>
+                    
+                    <div class="footer__copyright">
+                        ©PiterSki Все права защищены
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/swiper-bundle.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>                                       
